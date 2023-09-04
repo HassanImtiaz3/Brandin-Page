@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+
+:root{
+    --red : #d01c28;
+    --grey: #2e2e2e;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container
+{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 72px;
+}
+
+.myNavList{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-weight: bold;
+}
+
+.navBtn{
+    padding: 10px 25px!important;
+    color:white !important ;
+    background-color: var(--red) !important;
+    all: unset;
+    font-weight: bold !important;
+    border-radius: 12px !important;
+}
+
+/* Add your existing CSS rules here */
+
+/* Make the layout responsive */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+    }
+    .myNavList {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .navBtn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .mobile-menu-toggle {
+        display: block;
+    }
+    .mobile-menu-toggle span {
+        background-color: var(--red);
+        height: 3px;
+        width: 30px;
+        display: block;
+        margin: 5px auto;
+        transition: transform 0.3s ease-in-out;
+    }
+    .nav-open .mobile-menu-toggle span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+    .nav-open .mobile-menu-toggle span:nth-child(2) {
+        opacity: 0;
+    }
+    .nav-open .mobile-menu-toggle span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+}
+
+/* nav bar section end */
+
+.Hero{
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 72px);
+}
+
+.Hero h1{
+    font-weight: 800;
+    font-size: 78px;
+    line-height: 102px;
+    padding: 10px;
+}
+
+.Hero p{
+    font-weight: 600;
+    color: var(--grey);
+    padding: 10px;
+}
+
+
+.heroBtn{
+    display: flex;
+    gap: 15px;
+}
+
+.heroBtn button{
+    padding: 10px 25px!important;
+    color:white !important ;
+    background-color: var(--red) !important;
+    all: unset;
+    font-weight: bold !important;
+    border-radius: 12px !important;
+}
+
+.brandIcon
+{
+    padding: 10px;
+    display: flex;
+    gap: 20px
+}
+
+.heroContent{
+    flex-direction: column;
+    gap: 36px;
+}
+
+
+/* Add your existing CSS rules here */
+
+/* Make the layout responsive */
+@media screen and (max-width: 768px) {
+    .Hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+    }
+    .Hero h1 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+    .Hero p {
+        font-size: 16px;
+    }
+    .heroContent {
+        text-align: center;
+        gap: 20px;
+    }
+    .heroBtn {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .heroBtn button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .brandIcon {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .brandIcon img {
+        max-width: 100px;
+        height: auto;
+    }
+    .heroImage {
+        text-align: center;
+    }
+    .heroImage img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+
+
+
