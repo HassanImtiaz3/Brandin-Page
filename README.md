@@ -1,3 +1,5 @@
+![image](https://github.com/HassanImtiaz3/Brandin-Page/assets/91140083/bb912232-d4d9-4c27-a549-cecb678b6eb3)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
